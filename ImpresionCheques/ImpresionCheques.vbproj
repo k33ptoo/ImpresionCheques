@@ -46,10 +46,14 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Program Files (x86)\Bunifu Technologies\Bunifu Framework Manager\bin\updates\Bunifu UI 1.5.3\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -69,13 +73,42 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="ACCESOS\bancoAcceso.vb" />
+    <Compile Include="ACCESOS\chequeAcceso.vb" />
+    <Compile Include="ACCESOS\configuracionAcceso.vb" />
+    <Compile Include="ACCESOS\cuentaAcceso.vb" />
+    <Compile Include="ACCESOS\proveedorAcceso.vb" />
+    <Compile Include="AUXILIAR\mensaje_Frm.Designer.vb">
+      <DependentUpon>Mensaje_Frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AUXILIAR\Mensaje_Frm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="APLICACION\Main.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="APLICACION\Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODELO\banco.vb" />
+    <Compile Include="MODELO\cheque.vb" />
+    <Compile Include="MODELO\CONFIGURACION.vb" />
+    <Compile Include="MODELO\cuenta.vb" />
+    <Compile Include="MODELO\proveedor.vb" />
+    <Compile Include="MODULOS\modAccessOLEDBConnection.vb" />
+    <Compile Include="MODULOS\modAuxiliaryFunctions.vb" />
+    <Compile Include="MODULOS\modConfiguracion.vb" />
+    <Compile Include="MODULOS\modErrorsHandlingAndSendComments.vb" />
+    <Compile Include="MODULOS\modLogManager.vb" />
+    <Compile Include="MODULOS\modMail.vb" />
+    <Compile Include="MODULOS\modRegistryManager.vb" />
+    <Compile Include="MODULOS\modSystemInformation.vb" />
+    <Compile Include="MODULOS\modTextFileAccess.vb" />
+    <Compile Include="MODULOS\modTracking.vb" />
+    <Compile Include="MODULOS\modVariablesConstantes.vb" />
+    <Compile Include="MODULOS\modXMLSerialization.vb" />
+    <Compile Include="Mod_Print.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -93,6 +126,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AUXILIAR\mensaje_Frm.resx">
+      <DependentUpon>Mensaje_Frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -110,6 +149,10 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGENES\imprimir.ico" />
+    <Content Include="IMAGENES\Print_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
