@@ -15,7 +15,7 @@
     Public StartPath As String = Application.StartupPath
     Public ImagenesPath As String = StartPath & "\IMG"
     Public HTMLPath As String = StartPath & "\HTML"
-    Public pathArchivoIni As String = StartPath & "\hc.ini"
+    Public pathArchivoIni As String = StartPath & "\config.ini"
     Public pathArchivoUTC As String = StartPath & "\UTC.ini"
     Public pathAyuda As String = StartPath & "\AYUDA"
 
@@ -35,7 +35,7 @@
     Public _chequeAcceso As New chequeAcceso
     Public _cuentaAcceso As New cuentaAcceso
     Public _proveedorAcceso As New proveedorAcceso
-    Public lector_texto As modTExtFileAccess
+    Public lector_texto As New modTExtFileAccess
 
     'TRANSICIONES
     Public animation_vertical As New BunifuAnimatorNS.BunifuTransition

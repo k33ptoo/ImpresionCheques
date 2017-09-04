@@ -13,8 +13,6 @@ Module modConfiguracion
             'crear estructura de archivos del sistema
             create_Log_file()
             Create_INI_file()
-            Create_HTML_directory()
-            Create_IMG_directory()
 
             'comprobar si esta instalado el motor de access
             If thisProgramIsInstalled("Microsoft Access database engine 2010 (Spanish)") = False Then
@@ -92,7 +90,7 @@ todolisto:
             '    Process.Start(updaterPath)
             'End If
 
-
+            Configurar_animaciones()
             Cargar_listas_parametricas()
 
             Return True
@@ -101,6 +99,16 @@ todolisto:
             Throw
         End Try
     End Function
+
+
+    Public Sub Configurar_animaciones()
+        Try
+            animation_vertical.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide
+            animation_horizontal.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
+        Catch ex As Exception
+            Throw
+        End Try
+    End Sub
 
     Sub Cargar_listas_parametricas()
         Try

@@ -117,26 +117,33 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Print_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\IMAGENES\Print_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="BunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>38</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BunifuiOSSwitch2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGQAAAA4CAYAAAALrl3YAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEWSURBVHhe7c5RbgMhDADR3P8ePUeP1v4RRZ7NsoCdVZiR
+        3hfG8LAd+v3528Ktow/v5DbR53b2segzeiqNPqAoPXpU51Kih9RvafSArlsSLda4qWih5g1HyzRvKFqk
+        dS5FC7Red3RZ63VFF5XnNLqkPG+jC8p3GA0rH0aDqoHRoOqEaEh1QjSkOiEaUp2XaEC1XqIB1WvRoeq1
+        6FD1WnSoei06VL0WHapeiw5VK0RDqhOiIdUJ0ZDqhGhIdUI0pBqH0bDyHUbDyvc2uqA8p9El5emKLmq9
+        7uiy1rsULdA6Q9EizRuOlmneVLRQ45ZEi3Xd0ugB9UuJHtK59OhRRaXRB/T0segzO7tN9Lmd3Dr68Dey
+        b+/x+AdtKK3qr8ACxgAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="Print_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\IMAGENES\Print_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Print_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\IMAGENES\Print_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Check Book_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\IMAGENES\Check Book_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Collaborator Male_96px_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\IMAGENES\Collaborator Male_96px_selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imprimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\IMAGENES\imprimir.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Help_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\IMAGENES\Help_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BunifuiOSSwitch1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGQAAAA4CAYAAAALrl3YAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEWSURBVHhe7c5RbgMhDADR3P8ePUeP1v4RRZ7NsoCdVZiR
+        3hfG8LAd+v3528Ktow/v5DbR53b2segzeiqNPqAoPXpU51Kih9RvafSArlsSLda4qWih5g1HyzRvKFqk
+        dS5FC7Red3RZ63VFF5XnNLqkPG+jC8p3GA0rH0aDqoHRoOqEaEh1QjSkOiEaUp2XaEC1XqIB1WvRoeq1
+        6FD1WnSoei06VL0WHapeiw5VK0RDqhOiIdUJ0ZDqhGhIdUI0pBqH0bDyHUbDyvc2uqA8p9El5emKLmq9
+        7uiy1rsULdA6Q9EizRuOlmneVLRQ45ZEi3Xd0ugB9UuJHtK59OhRRaXRB/T0segzO7tN9Lmd3Dr68Dey
+        b+/x+AdtKK3qr8ACxgAAAABJRU5ErkJggg==
+</value>
   </data>
 </root>
