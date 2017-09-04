@@ -117,29 +117,52 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Print_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\IMAGENES\Print_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BtnActualizar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAlBJREFUeF7t
+        mltKA0EQRbMgwcX4qRvwU92GumARY93xFF7DKImme6bHOtCQzHTXfZgHSHZFURRFURRFUZzEfr+/5OHi
+        dPcSgs+x3mLdcmkx5AEvT1xqSwg9xkoWLUHaeEgeudWGELiI9TpJfaLn12zpRmjeoO3o+QVb2hACV7Fe
+        pGZ0fSVIC01Hnq7Y0hYJIeh0KUEaaDn9wicSRNhpWoJmo+H0D59IGANOkxI0k9nOcuETGcCIc9YSNIuZ
+        zvLhExnBkHOWEjSDWc56wicyhDHnTyXoLDOc9YVPZAyDzq9K0BnOOusNn8ggRp2TStBezjjrD5/IKIad
+        o0rQHvY644RPZBjjzo8l6B57nPHCJzJOAGe2BF3jnjNu+EQBCOJ8KUGPueaMHz5REAI5Uwms7YZPFIhg
+        joJvP3yiYAT8ju2GTxQw1uE/MoSubTu8iJBz73kxfSawbZsoIEG/Y7slKBgBHb3sD98O2ytBgQjmTB94
+        rLlvh22UoCAEcr582usx15zxS1AAgjizX3W6xj1n3BJknADObPhE99jjjFeCDGPc+TF8oj3sdcYpQUYx
+        7BwVPtFezjjrL0EGMeqcFD7RGc466y1BxjDo/Cp8orPMcNZXggxhzPlT+EQzmOWspwQZwZBzlvCJZjHT
+        Wb4EGcCIc9bwiWYy21muBAljwGkSPtFsNJz+JUgQYadp+EQaaDn9SpAQgk6X8Im00HTalxAC9ROZELif
+        pD7o+pc/RNp4SO641ZYQeoi1aPhEHvDywKU+hOD//aFkURRFURRFUYzObvcOhyemmDW88m0AAAAASUVO
+        RK5CYII=
+</value>
   </data>
-  <data name="Print_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\IMAGENES\Print_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Help_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\IMAGENES\Help_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Check Book_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\IMAGENES\Check Book_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Collaborator Male_96px_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\IMAGENES\Collaborator Male_96px_selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Print_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\IMAGENES\Print_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imprimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\IMAGENES\imprimir.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Search_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\IMAGENES\Search_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Btn_Buscar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        enIdAAAAAElFTkSuQmCC
+</value>
   </data>
 </root>

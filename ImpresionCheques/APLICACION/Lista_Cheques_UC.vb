@@ -77,4 +77,12 @@
         End Try
     End Sub
 
+    Private Sub Buscar_UC11_Buscando(sender As Object, e As String) Handles Buscar_UC11.Buscando
+        Try
+
+        Catch ex As Exception
+            Report_exeption(ex)
+        End Try
+    End Sub
+
 End Class

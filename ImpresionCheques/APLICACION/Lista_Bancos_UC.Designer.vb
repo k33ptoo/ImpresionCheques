@@ -29,7 +29,6 @@ Partial Class Lista_Bancos_UC
         Me.Dgv_Entidades = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.BunifuFlatButton7 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuFlatButton6 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -38,6 +37,7 @@ Partial Class Lista_Bancos_UC
         Me.BtnEliminar = New Bunifu.Framework.UI.BunifuTileButton()
         Me.BtnActualizar = New Bunifu.Framework.UI.BunifuTileButton()
         Me._Banco_detalle = New ImpresionCheques.Banco_detalle()
+        Me.Buscar_UC11 = New ImpresionCheques.Buscar_UC1()
         CType(Me.Dgv_Entidades, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -97,7 +97,6 @@ Partial Class Lista_Bancos_UC
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.Panel4.Controls.Add(Me.BunifuFlatButton7)
-        Me.Panel4.Controls.Add(Me.BunifuFlatButton6)
         Me.Panel4.Controls.Add(Me.Label2)
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
         Me.Panel4.Name = "Panel4"
@@ -127,7 +126,7 @@ Partial Class Lista_Bancos_UC
         Me.BunifuFlatButton7.IconVisible = True
         Me.BunifuFlatButton7.IconZoom = 70.0R
         Me.BunifuFlatButton7.IsTab = False
-        Me.BunifuFlatButton7.Location = New System.Drawing.Point(610, 15)
+        Me.BunifuFlatButton7.Location = New System.Drawing.Point(730, 15)
         Me.BunifuFlatButton7.Name = "BunifuFlatButton7"
         Me.BunifuFlatButton7.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.BunifuFlatButton7.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -140,42 +139,6 @@ Partial Class Lista_Bancos_UC
         Me.BunifuFlatButton7.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton7.TextFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'BunifuFlatButton6
-        '
-        Me.BunifuFlatButton6.Activecolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton6.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BunifuFlatButton6.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.BunifuFlatButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton6.BorderRadius = 0
-        Me.BunifuFlatButton6.ButtonText = "Filtros"
-        Me.BunifuFlatButton6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton6.DisabledColor = System.Drawing.Color.DimGray
-        Me.BunifuFlatButton6.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuFlatButton6.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton6.Iconimage = CType(resources.GetObject("BunifuFlatButton6.Iconimage"), System.Drawing.Image)
-        Me.BunifuFlatButton6.Iconimage_right = Nothing
-        Me.BunifuFlatButton6.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton6.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton6.IconMarginLeft = 10
-        Me.BunifuFlatButton6.IconMarginRight = 0
-        Me.BunifuFlatButton6.IconRightVisible = True
-        Me.BunifuFlatButton6.IconRightZoom = 0R
-        Me.BunifuFlatButton6.IconVisible = True
-        Me.BunifuFlatButton6.IconZoom = 70.0R
-        Me.BunifuFlatButton6.IsTab = False
-        Me.BunifuFlatButton6.Location = New System.Drawing.Point(745, 15)
-        Me.BunifuFlatButton6.Name = "BunifuFlatButton6"
-        Me.BunifuFlatButton6.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.BunifuFlatButton6.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.BunifuFlatButton6.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton6.selected = False
-        Me.BunifuFlatButton6.Size = New System.Drawing.Size(110, 50)
-        Me.BunifuFlatButton6.TabIndex = 100
-        Me.BunifuFlatButton6.Text = "Filtros"
-        Me.BunifuFlatButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BunifuFlatButton6.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton6.TextFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -183,9 +146,9 @@ Partial Class Lista_Bancos_UC
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(35, 25)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(157, 28)
+        Me.Label2.Size = New System.Drawing.Size(93, 28)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Lista de bancos"
+        Me.Label2.Text = "BANCOS"
         '
         'TableLayoutPanel1
         '
@@ -196,6 +159,7 @@ Partial Class Lista_Bancos_UC
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Panel1, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.Buscar_UC11, 2, 0)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 85)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
@@ -306,6 +270,14 @@ Partial Class Lista_Bancos_UC
         Me._Banco_detalle.TabIndex = 127
         Me._Banco_detalle.Visible = False
         '
+        'Buscar_UC11
+        '
+        Me.Buscar_UC11.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Buscar_UC11.Location = New System.Drawing.Point(558, 3)
+        Me.Buscar_UC11.Name = "Buscar_UC11"
+        Me.Buscar_UC11.Size = New System.Drawing.Size(309, 49)
+        Me.Buscar_UC11.TabIndex = 127
+        '
         'Lista_Bancos_UC
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -333,9 +305,9 @@ Partial Class Lista_Bancos_UC
     Friend WithEvents BtnNuevo As Bunifu.Framework.UI.BunifuTileButton
     Friend WithEvents Panel4 As Panel
     Friend WithEvents BunifuFlatButton7 As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents BunifuFlatButton6 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents Label2 As Label
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents _Banco_detalle As Banco_detalle
+    Friend WithEvents Buscar_UC11 As Buscar_UC1
 End Class

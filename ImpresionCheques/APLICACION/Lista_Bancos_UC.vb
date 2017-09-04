@@ -1,8 +1,9 @@
 ﻿Public Class Lista_Bancos_UC
 
-    Private Sub Lista_Cheques_UC_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Private Sub Lista_Cheques_UC_Load(sender As Object, e As EventArgs) Handles Me.Load, BtnActualizar.Click
         Try
             Cargar_datos()
+            Buscar()
         Catch ex As Exception
             Report_exeption(ex)
         End Try
@@ -41,12 +42,11 @@
         End Try
     End Sub
 
-    Sub Cargar_datos()
+    Sub Buscar(Optional texto As String = "")
         Try
-            _lista_bancos = _bancoAcceso.recuperar
-
             Dim query =
                 From b In _lista_bancos
+                Where b.nombre.Trim.ToLower.Contains(texto.Trim.ToLower)
                 Order By b.nombre Ascending
                 Select b
 
@@ -58,6 +58,14 @@
                 .ClearSelection()
             End With
 
+        Catch ex As Exception
+            Throw
+        End Try
+    End Sub
+
+    Sub Cargar_datos()
+        Try
+            _lista_bancos = _bancoAcceso.recuperar
         Catch ex As Exception
             Throw
         End Try
@@ -121,9 +129,9 @@
         End Try
     End Sub
 
-    Private Sub BtnActualizar_Click(sender As Object, e As EventArgs) Handles BtnActualizar.Click
+    Private Sub Buscar_UC11_Buscando(sender As Object, e As String) Handles Buscar_UC11.Buscando
         Try
-
+            Buscar(Buscar_UC11.Text)
         Catch ex As Exception
             Report_exeption(ex)
         End Try

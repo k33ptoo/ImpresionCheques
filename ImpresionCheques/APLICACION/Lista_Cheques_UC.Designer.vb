@@ -37,6 +37,8 @@ Partial Class Lista_Cheques_UC
         Me.BtnEditar = New Bunifu.Framework.UI.BunifuTileButton()
         Me.BtnEliminar = New Bunifu.Framework.UI.BunifuTileButton()
         Me.BtnActualizar = New Bunifu.Framework.UI.BunifuTileButton()
+        Me.Buscar_UC11 = New ImpresionCheques.Buscar_UC1()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me._Cheque_detalle = New ImpresionCheques.Cheque_detalle()
         CType(Me.Dgv_Entidades, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
@@ -178,6 +180,7 @@ Partial Class Lista_Cheques_UC
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Panel1, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.Buscar_UC11, 2, 0)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 85)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
@@ -276,6 +279,14 @@ Partial Class Lista_Cheques_UC
         Me.BtnActualizar.Size = New System.Drawing.Size(55, 50)
         Me.BtnActualizar.TabIndex = 123
         '
+        'Buscar_UC11
+        '
+        Me.Buscar_UC11.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Buscar_UC11.Location = New System.Drawing.Point(558, 3)
+        Me.Buscar_UC11.Name = "Buscar_UC11"
+        Me.Buscar_UC11.Size = New System.Drawing.Size(309, 49)
+        Me.Buscar_UC11.TabIndex = 127
+        '
         '_Cheque_detalle
         '
         Cheque1.Cruzado = False
@@ -327,4 +338,6 @@ Partial Class Lista_Cheques_UC
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents _Cheque_detalle As Cheque_detalle
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents Buscar_UC11 As Buscar_UC1
 End Class

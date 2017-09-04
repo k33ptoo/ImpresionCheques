@@ -84,6 +84,12 @@
     <Compile Include="APLICACION\Banco_detalle.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="APLICACION\Buscar_UC1.Designer.vb">
+      <DependentUpon>Buscar_UC1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\Buscar_UC1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="APLICACION\Cheque_detalle.Designer.vb">
       <DependentUpon>Cheque_detalle.vb</DependentUpon>
     </Compile>
@@ -160,6 +166,9 @@
     <EmbeddedResource Include="APLICACION\Banco_detalle.resx">
       <DependentUpon>Banco_detalle.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\buscar_UC1.resx">
+      <DependentUpon>Buscar_UC1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="APLICACION\Cheque_detalle.resx">
       <DependentUpon>Cheque_detalle.vb</DependentUpon>
     </EmbeddedResource>
@@ -197,6 +206,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="IMAGENES\Search_96px.png" />
     <None Include="IMAGENES\Print_64px.png" />
     <None Include="IMAGENES\Print_96px.png" />
     <None Include="IMAGENES\Check Book_96px.png" />
