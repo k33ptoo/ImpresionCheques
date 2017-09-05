@@ -1,10 +1,33 @@
-﻿Public Class Lista_Cheques_UC
+﻿Public Class Cheques_Lista_UC
 
     Private Sub Lista_Cheques_UC_Load(sender As Object, e As EventArgs) Handles Me.Load
         Try
-            Dgv_Entidades.DataSource = _lista_cheques
+            Cargar_datos()
+            Buscar_datos()
         Catch ex As Exception
             Report_exeption(ex)
+        End Try
+    End Sub
+
+    Sub Buscar_datos()
+        Try
+
+            If _lista_cheques.Count = 0 Then
+                Dgv_Entidades.DataSource = Nothing
+            Else
+                Dgv_Entidades.DataSource = _lista_cheques
+            End If
+
+        Catch ex As Exception
+            Throw
+        End Try
+    End Sub
+
+    Sub Cargar_datos()
+        Try
+            _lista_cheques = _chequeAcceso.recuperar
+        Catch ex As Exception
+            Throw
         End Try
     End Sub
 

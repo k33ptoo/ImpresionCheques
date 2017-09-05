@@ -48,6 +48,8 @@
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>C:\Program Files (x86)\Bunifu Technologies\Bunifu Framework Manager\bin\updates\Bunifu UI 1.5.3\Bunifu_UI_v1.5.3.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -78,34 +80,46 @@
     <Compile Include="ACCESOS\configuracionAcceso.vb" />
     <Compile Include="ACCESOS\cuentaAcceso.vb" />
     <Compile Include="ACCESOS\proveedorAcceso.vb" />
-    <Compile Include="APLICACION\Banco_detalle.Designer.vb">
+    <Compile Include="APLICACION\Detalles\Banco_detalle.Designer.vb">
       <DependentUpon>Banco_detalle.vb</DependentUpon>
     </Compile>
-    <Compile Include="APLICACION\Banco_detalle.vb">
+    <Compile Include="APLICACION\Detalles\Banco_detalle.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="APLICACION\Buscar_UC1.Designer.vb">
+    <Compile Include="APLICACION\Controles\Buscar_UC1.Designer.vb">
       <DependentUpon>Buscar_UC1.vb</DependentUpon>
     </Compile>
-    <Compile Include="APLICACION\Buscar_UC1.vb">
+    <Compile Include="APLICACION\Controles\Buscar_UC1.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="APLICACION\Cheque_detalle.Designer.vb">
+    <Compile Include="APLICACION\Detalles\Cuenta_detalle.Designer.vb">
+      <DependentUpon>Cuenta_detalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\Detalles\Cuenta_detalle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="APLICACION\Detalles\Cheque_detalle.Designer.vb">
       <DependentUpon>Cheque_detalle.vb</DependentUpon>
     </Compile>
-    <Compile Include="APLICACION\Cheque_detalle.vb">
+    <Compile Include="APLICACION\Detalles\Cheque_detalle.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="APLICACION\Lista_Bancos_UC.Designer.vb">
-      <DependentUpon>Lista_Bancos_UC.vb</DependentUpon>
+    <Compile Include="APLICACION\Listas\Cuentas_Lista_UC.Designer.vb">
+      <DependentUpon>Cuentas_Lista_UC.vb</DependentUpon>
     </Compile>
-    <Compile Include="APLICACION\Lista_Bancos_UC.vb">
+    <Compile Include="APLICACION\Listas\Cuentas_Lista_UC.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="APLICACION\Lista_Cheques_UC.Designer.vb">
-      <DependentUpon>Lista_Cheques_UC.vb</DependentUpon>
+    <Compile Include="APLICACION\Listas\Bancos_Lista_UC.Designer.vb">
+      <DependentUpon>Bancos_Lista_UC.vb</DependentUpon>
     </Compile>
-    <Compile Include="APLICACION\Lista_Cheques_UC.vb">
+    <Compile Include="APLICACION\Listas\Bancos_Lista_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="APLICACION\Listas\Cheques_Lista_UC.Designer.vb">
+      <DependentUpon>Cheques_Lista_UC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\Listas\Cheques_Lista_UC.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="AUXILIAR\mensaje_Frm.Designer.vb">
@@ -163,20 +177,26 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="APLICACION\Banco_detalle.resx">
+    <EmbeddedResource Include="APLICACION\Detalles\Banco_detalle.resx">
       <DependentUpon>Banco_detalle.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="APLICACION\buscar_UC1.resx">
+    <EmbeddedResource Include="APLICACION\Controles\buscar_UC1.resx">
       <DependentUpon>Buscar_UC1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="APLICACION\Cheque_detalle.resx">
+    <EmbeddedResource Include="APLICACION\Detalles\Cuenta_detalle.resx">
+      <DependentUpon>Cuenta_detalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\Detalles\Cheque_detalle.resx">
       <DependentUpon>Cheque_detalle.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="APLICACION\Lista_Bancos_UC.resx">
-      <DependentUpon>Lista_Bancos_UC.vb</DependentUpon>
+    <EmbeddedResource Include="APLICACION\Listas\Cuentas_Lista_UC.resx">
+      <DependentUpon>Cuentas_Lista_UC.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="APLICACION\Lista_Cheques_UC.resx">
-      <DependentUpon>Lista_Cheques_UC.vb</DependentUpon>
+    <EmbeddedResource Include="APLICACION\Listas\Bancos_Lista_UC.resx">
+      <DependentUpon>Bancos_Lista_UC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\Listas\Cheques_Lista_UC.resx">
+      <DependentUpon>Cheques_Lista_UC.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AUXILIAR\mensaje_Frm.resx">
       <DependentUpon>Mensaje_Frm.vb</DependentUpon>

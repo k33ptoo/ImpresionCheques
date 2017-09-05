@@ -24,14 +24,14 @@ Partial Class Cheque_detalle
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cheque_detalle))
-        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.Txt_Numero = New System.Windows.Forms.TextBox()
         Me.Label31 = New System.Windows.Forms.Label()
-        Me.cmbTipo = New System.Windows.Forms.ComboBox()
+        Me.Cmb_Cuenta = New System.Windows.Forms.ComboBox()
         Me.dtpOrdenFecha = New System.Windows.Forms.DateTimePicker()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Txt_Importe = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuiOSSwitch1 = New Bunifu.Framework.UI.BunifuiOSSwitch()
@@ -39,22 +39,30 @@ Partial Class Cheque_detalle
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.BunifuiOSSwitch2 = New Bunifu.Framework.UI.BunifuiOSSwitch()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TxtProveedor = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.BtnGuardar = New System.Windows.Forms.Button()
         Me.BtnCancelar = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'txtNombre
+        'Txt_Numero
         '
-        Me.txtNombre.BackColor = System.Drawing.Color.White
-        Me.txtNombre.Font = New System.Drawing.Font("Century Gothic", 16.5!)
-        Me.txtNombre.ForeColor = System.Drawing.Color.Black
-        Me.txtNombre.Location = New System.Drawing.Point(33, 125)
-        Me.txtNombre.MaxLength = 255
-        Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(315, 34)
-        Me.txtNombre.TabIndex = 14
+        Me.Txt_Numero.BackColor = System.Drawing.Color.White
+        Me.Txt_Numero.Font = New System.Drawing.Font("Century Gothic", 16.5!)
+        Me.Txt_Numero.ForeColor = System.Drawing.Color.Black
+        Me.Txt_Numero.Location = New System.Drawing.Point(33, 125)
+        Me.Txt_Numero.MaxLength = 255
+        Me.Txt_Numero.Name = "Txt_Numero"
+        Me.Txt_Numero.Size = New System.Drawing.Size(315, 34)
+        Me.Txt_Numero.TabIndex = 14
         '
         'Label31
         '
@@ -67,19 +75,19 @@ Partial Class Cheque_detalle
         Me.Label31.TabIndex = 13
         Me.Label31.Text = "Número"
         '
-        'cmbTipo
+        'Cmb_Cuenta
         '
-        Me.cmbTipo.BackColor = System.Drawing.Color.White
-        Me.cmbTipo.DisplayMember = "nombre"
-        Me.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbTipo.Font = New System.Drawing.Font("Century Gothic", 16.5!)
-        Me.cmbTipo.ForeColor = System.Drawing.Color.Black
-        Me.cmbTipo.FormattingEnabled = True
-        Me.cmbTipo.Location = New System.Drawing.Point(355, 125)
-        Me.cmbTipo.Name = "cmbTipo"
-        Me.cmbTipo.Size = New System.Drawing.Size(315, 33)
-        Me.cmbTipo.TabIndex = 128
-        Me.cmbTipo.ValueMember = "id_tipo"
+        Me.Cmb_Cuenta.BackColor = System.Drawing.Color.White
+        Me.Cmb_Cuenta.DisplayMember = "numero"
+        Me.Cmb_Cuenta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Cmb_Cuenta.Font = New System.Drawing.Font("Century Gothic", 16.5!)
+        Me.Cmb_Cuenta.ForeColor = System.Drawing.Color.Black
+        Me.Cmb_Cuenta.FormattingEnabled = True
+        Me.Cmb_Cuenta.Location = New System.Drawing.Point(355, 125)
+        Me.Cmb_Cuenta.Name = "Cmb_Cuenta"
+        Me.Cmb_Cuenta.Size = New System.Drawing.Size(315, 33)
+        Me.Cmb_Cuenta.TabIndex = 128
+        Me.Cmb_Cuenta.ValueMember = "id_cuenta"
         '
         'dtpOrdenFecha
         '
@@ -123,16 +131,16 @@ Partial Class Cheque_detalle
         Me.DateTimePicker1.Size = New System.Drawing.Size(155, 34)
         Me.DateTimePicker1.TabIndex = 131
         '
-        'TextBox1
+        'Txt_Importe
         '
-        Me.TextBox1.BackColor = System.Drawing.Color.White
-        Me.TextBox1.Font = New System.Drawing.Font("Century Gothic", 16.5!)
-        Me.TextBox1.ForeColor = System.Drawing.Color.Black
-        Me.TextBox1.Location = New System.Drawing.Point(355, 195)
-        Me.TextBox1.MaxLength = 255
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(315, 34)
-        Me.TextBox1.TabIndex = 134
+        Me.Txt_Importe.BackColor = System.Drawing.Color.White
+        Me.Txt_Importe.Font = New System.Drawing.Font("Century Gothic", 16.5!)
+        Me.Txt_Importe.ForeColor = System.Drawing.Color.Black
+        Me.Txt_Importe.Location = New System.Drawing.Point(355, 195)
+        Me.Txt_Importe.MaxLength = 255
+        Me.Txt_Importe.Name = "Txt_Importe"
+        Me.Txt_Importe.Size = New System.Drawing.Size(315, 34)
+        Me.Txt_Importe.TabIndex = 134
         '
         'Label3
         '
@@ -156,7 +164,7 @@ Partial Class Cheque_detalle
         Me.BunifuiOSSwitch1.BackgroundImage = CType(resources.GetObject("BunifuiOSSwitch1.BackgroundImage"), System.Drawing.Image)
         Me.BunifuiOSSwitch1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuiOSSwitch1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuiOSSwitch1.Location = New System.Drawing.Point(630, 60)
+        Me.BunifuiOSSwitch1.Location = New System.Drawing.Point(290, 265)
         Me.BunifuiOSSwitch1.Name = "BunifuiOSSwitch1"
         Me.BunifuiOSSwitch1.OffColor = System.Drawing.Color.Gray
         Me.BunifuiOSSwitch1.OnColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(165, Byte), Integer))
@@ -180,7 +188,7 @@ Partial Class Cheque_detalle
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!)
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(550, 60)
+        Me.Label5.Location = New System.Drawing.Point(210, 265)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(77, 21)
         Me.Label5.TabIndex = 137
@@ -191,7 +199,7 @@ Partial Class Cheque_detalle
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 12.0!)
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(385, 60)
+        Me.Label6.Location = New System.Drawing.Point(45, 265)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(115, 21)
         Me.Label6.TabIndex = 139
@@ -203,7 +211,7 @@ Partial Class Cheque_detalle
         Me.BunifuiOSSwitch2.BackgroundImage = CType(resources.GetObject("BunifuiOSSwitch2.BackgroundImage"), System.Drawing.Image)
         Me.BunifuiOSSwitch2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuiOSSwitch2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuiOSSwitch2.Location = New System.Drawing.Point(500, 60)
+        Me.BunifuiOSSwitch2.Location = New System.Drawing.Point(160, 265)
         Me.BunifuiOSSwitch2.Name = "BunifuiOSSwitch2"
         Me.BunifuiOSSwitch2.OffColor = System.Drawing.Color.Gray
         Me.BunifuiOSSwitch2.OnColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(165, Byte), Integer))
@@ -211,16 +219,16 @@ Partial Class Cheque_detalle
         Me.BunifuiOSSwitch2.TabIndex = 138
         Me.BunifuiOSSwitch2.Value = True
         '
-        'TextBox2
+        'TxtProveedor
         '
-        Me.TextBox2.BackColor = System.Drawing.Color.White
-        Me.TextBox2.Font = New System.Drawing.Font("Century Gothic", 16.5!)
-        Me.TextBox2.ForeColor = System.Drawing.Color.Black
-        Me.TextBox2.Location = New System.Drawing.Point(35, 195)
-        Me.TextBox2.MaxLength = 255
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(315, 34)
-        Me.TextBox2.TabIndex = 141
+        Me.TxtProveedor.BackColor = System.Drawing.Color.White
+        Me.TxtProveedor.Font = New System.Drawing.Font("Century Gothic", 16.5!)
+        Me.TxtProveedor.ForeColor = System.Drawing.Color.Black
+        Me.TxtProveedor.Location = New System.Drawing.Point(35, 195)
+        Me.TxtProveedor.MaxLength = 255
+        Me.TxtProveedor.Name = "TxtProveedor"
+        Me.TxtProveedor.Size = New System.Drawing.Size(315, 34)
+        Me.TxtProveedor.TabIndex = 141
         '
         'Label7
         '
@@ -261,53 +269,171 @@ Partial Class Cheque_detalle
         Me.BtnCancelar.Text = "CANCELAR"
         Me.BtnCancelar.UseVisualStyleBackColor = False
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.CheckBox5)
+        Me.Panel1.Controls.Add(Me.CheckBox4)
+        Me.Panel1.Controls.Add(Me.CheckBox3)
+        Me.Panel1.Controls.Add(Me.CheckBox2)
+        Me.Panel1.Controls.Add(Me.CheckBox1)
+        Me.Panel1.Location = New System.Drawing.Point(355, 55)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(315, 34)
+        Me.Panel1.TabIndex = 155
+        '
+        'CheckBox5
+        '
+        Me.CheckBox5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.CheckBox5.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CheckBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.CheckBox5.FlatAppearance.BorderSize = 0
+        Me.CheckBox5.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(165, Byte), Integer))
+        Me.CheckBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox5.Font = New System.Drawing.Font("Century Gothic", 10.0!)
+        Me.CheckBox5.Location = New System.Drawing.Point(250, 0)
+        Me.CheckBox5.Name = "CheckBox5"
+        Me.CheckBox5.Size = New System.Drawing.Size(65, 34)
+        Me.CheckBox5.TabIndex = 159
+        Me.CheckBox5.Text = "+150d"
+        Me.CheckBox5.UseVisualStyleBackColor = False
+        '
+        'CheckBox4
+        '
+        Me.CheckBox4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.CheckBox4.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CheckBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.CheckBox4.FlatAppearance.BorderSize = 0
+        Me.CheckBox4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(165, Byte), Integer))
+        Me.CheckBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox4.Font = New System.Drawing.Font("Century Gothic", 10.0!)
+        Me.CheckBox4.Location = New System.Drawing.Point(180, 0)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(65, 34)
+        Me.CheckBox4.TabIndex = 158
+        Me.CheckBox4.Text = "+120d"
+        Me.CheckBox4.UseVisualStyleBackColor = False
+        '
+        'CheckBox3
+        '
+        Me.CheckBox3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.CheckBox3.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CheckBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.CheckBox3.FlatAppearance.BorderSize = 0
+        Me.CheckBox3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(165, Byte), Integer))
+        Me.CheckBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox3.Font = New System.Drawing.Font("Century Gothic", 10.0!)
+        Me.CheckBox3.Location = New System.Drawing.Point(120, 0)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(55, 34)
+        Me.CheckBox3.TabIndex = 157
+        Me.CheckBox3.Text = "+90d"
+        Me.CheckBox3.UseVisualStyleBackColor = False
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.CheckBox2.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CheckBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.CheckBox2.FlatAppearance.BorderSize = 0
+        Me.CheckBox2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(165, Byte), Integer))
+        Me.CheckBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox2.Font = New System.Drawing.Font("Century Gothic", 10.0!)
+        Me.CheckBox2.Location = New System.Drawing.Point(60, 0)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(55, 34)
+        Me.CheckBox2.TabIndex = 156
+        Me.CheckBox2.Text = "+60d"
+        Me.CheckBox2.UseVisualStyleBackColor = False
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.CheckBox1.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CheckBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.CheckBox1.FlatAppearance.BorderSize = 0
+        Me.CheckBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(165, Byte), Integer))
+        Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox1.Font = New System.Drawing.Font("Century Gothic", 10.0!)
+        Me.CheckBox1.Location = New System.Drawing.Point(0, 0)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(55, 34)
+        Me.CheckBox1.TabIndex = 155
+        Me.CheckBox1.Text = "+30d"
+        Me.CheckBox1.UseVisualStyleBackColor = False
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 12.0!)
+        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label8.Location = New System.Drawing.Point(355, 30)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(112, 21)
+        Me.Label8.TabIndex = 156
+        Me.Label8.Text = "Autogenerar"
+        '
         'Cheque_detalle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.BtnCancelar)
         Me.Controls.Add(Me.BtnGuardar)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TxtProveedor)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.BunifuiOSSwitch2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.BunifuiOSSwitch1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Txt_Importe)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dtpOrdenFecha)
-        Me.Controls.Add(Me.cmbTipo)
-        Me.Controls.Add(Me.txtNombre)
+        Me.Controls.Add(Me.Cmb_Cuenta)
+        Me.Controls.Add(Me.Txt_Numero)
         Me.Controls.Add(Me.Label31)
+        Me.Controls.Add(Me.Label8)
         Me.Name = "Cheque_detalle"
         Me.Size = New System.Drawing.Size(710, 325)
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents txtNombre As TextBox
+    Friend WithEvents Txt_Numero As TextBox
     Friend WithEvents Label31 As Label
-    Friend WithEvents cmbTipo As ComboBox
+    Friend WithEvents Cmb_Cuenta As ComboBox
     Friend WithEvents dtpOrdenFecha As DateTimePicker
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Txt_Importe As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents BtnCancelar As Button
     Friend WithEvents BtnGuardar As Button
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TxtProveedor As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents BunifuiOSSwitch2 As Bunifu.Framework.UI.BunifuiOSSwitch
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents BunifuiOSSwitch1 As Bunifu.Framework.UI.BunifuiOSSwitch
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents CheckBox4 As CheckBox
+    Friend WithEvents CheckBox3 As CheckBox
+    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents CheckBox5 As CheckBox
 End Class

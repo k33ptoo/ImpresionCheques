@@ -1,4 +1,4 @@
-﻿Public Class Lista_Bancos_UC
+﻿Public Class Bancos_Lista_UC
 
     Private Sub Lista_Cheques_UC_Load(sender As Object, e As EventArgs) Handles Me.Load, BtnActualizar.Click
         Try

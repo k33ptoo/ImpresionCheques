@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Lista_Cheques_UC
+Partial Class Cheques_Lista_UC
     Inherits System.Windows.Forms.UserControl
 
     'UserControl reemplaza a Dispose para limpiar la lista de componentes.
@@ -24,7 +24,7 @@ Partial Class Lista_Cheques_UC
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Lista_Cheques_UC))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cheques_Lista_UC))
         Dim Cheque1 As ImpresionCheques.cheque = New ImpresionCheques.cheque()
         Me.Dgv_Entidades = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -37,9 +37,9 @@ Partial Class Lista_Cheques_UC
         Me.BtnEditar = New Bunifu.Framework.UI.BunifuTileButton()
         Me.BtnEliminar = New Bunifu.Framework.UI.BunifuTileButton()
         Me.BtnActualizar = New Bunifu.Framework.UI.BunifuTileButton()
-        Me.Buscar_UC11 = New ImpresionCheques.Buscar_UC1()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me._Cheque_detalle = New ImpresionCheques.Cheque_detalle()
+        Me.Buscar_UC11 = New ImpresionCheques.Buscar_UC1()
         CType(Me.Dgv_Entidades, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -167,9 +167,9 @@ Partial Class Lista_Cheques_UC
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(35, 25)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(168, 28)
+        Me.Label2.Size = New System.Drawing.Size(101, 28)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Lista de cheques"
+        Me.Label2.Text = "CHEQUES"
         '
         'TableLayoutPanel1
         '
@@ -279,14 +279,6 @@ Partial Class Lista_Cheques_UC
         Me.BtnActualizar.Size = New System.Drawing.Size(55, 50)
         Me.BtnActualizar.TabIndex = 123
         '
-        'Buscar_UC11
-        '
-        Me.Buscar_UC11.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Buscar_UC11.Location = New System.Drawing.Point(558, 3)
-        Me.Buscar_UC11.Name = "Buscar_UC11"
-        Me.Buscar_UC11.Size = New System.Drawing.Size(309, 49)
-        Me.Buscar_UC11.TabIndex = 127
-        '
         '_Cheque_detalle
         '
         Cheque1.Cruzado = False
@@ -305,6 +297,14 @@ Partial Class Lista_Cheques_UC
         Me._Cheque_detalle.Size = New System.Drawing.Size(710, 325)
         Me._Cheque_detalle.TabIndex = 126
         Me._Cheque_detalle.Visible = False
+        '
+        'Buscar_UC11
+        '
+        Me.Buscar_UC11.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Buscar_UC11.Location = New System.Drawing.Point(558, 3)
+        Me.Buscar_UC11.Name = "Buscar_UC11"
+        Me.Buscar_UC11.Size = New System.Drawing.Size(309, 49)
+        Me.Buscar_UC11.TabIndex = 127
         '
         'Lista_Cheques_UC
         '

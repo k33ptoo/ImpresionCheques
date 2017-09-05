@@ -26,6 +26,7 @@ Partial Class Main
         Me.Btn_Proveedores = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnEditar = New Bunifu.Framework.UI.BunifuTileButton()
         Me.Panel_menu = New System.Windows.Forms.Panel()
+        Me.Btn_Cuentas = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BtnSalir = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -109,6 +110,7 @@ Partial Class Main
         Me.Panel_menu.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Panel_menu.BackColor = System.Drawing.Color.White
+        Me.Panel_menu.Controls.Add(Me.Btn_Cuentas)
         Me.Panel_menu.Controls.Add(Me.BtnSalir)
         Me.Panel_menu.Controls.Add(Me.Panel2)
         Me.Panel_menu.Controls.Add(Me.Btn_Cheques)
@@ -121,9 +123,44 @@ Partial Class Main
         Me.Panel_menu.Controls.Add(Me.Btn_Bancos)
         Me.Panel_menu.Location = New System.Drawing.Point(0, 0)
         Me.Panel_menu.Name = "Panel_menu"
-        Me.Panel_menu.Size = New System.Drawing.Size(290, 506)
+        Me.Panel_menu.Size = New System.Drawing.Size(290, 551)
         Me.Panel_menu.TabIndex = 92
         Me.Panel_menu.Visible = False
+        '
+        'BunifuFlatButton1
+        '
+        Me.Btn_Cuentas.Activecolor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.Btn_Cuentas.BackColor = System.Drawing.Color.White
+        Me.Btn_Cuentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Btn_Cuentas.BorderRadius = 0
+        Me.Btn_Cuentas.ButtonText = "Cuentas"
+        Me.Btn_Cuentas.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Btn_Cuentas.DisabledColor = System.Drawing.Color.DimGray
+        Me.Btn_Cuentas.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Cuentas.Iconcolor = System.Drawing.Color.Transparent
+        Me.Btn_Cuentas.Iconimage = CType(resources.GetObject("BunifuFlatButton1.Iconimage"), System.Drawing.Image)
+        Me.Btn_Cuentas.Iconimage_right = Nothing
+        Me.Btn_Cuentas.Iconimage_right_Selected = Nothing
+        Me.Btn_Cuentas.Iconimage_Selected = Nothing
+        Me.Btn_Cuentas.IconMarginLeft = 18
+        Me.Btn_Cuentas.IconMarginRight = 0
+        Me.Btn_Cuentas.IconRightVisible = True
+        Me.Btn_Cuentas.IconRightZoom = 0R
+        Me.Btn_Cuentas.IconVisible = True
+        Me.Btn_Cuentas.IconZoom = 70.0R
+        Me.Btn_Cuentas.IsTab = False
+        Me.Btn_Cuentas.Location = New System.Drawing.Point(0, 180)
+        Me.Btn_Cuentas.Name = "BunifuFlatButton1"
+        Me.Btn_Cuentas.Normalcolor = System.Drawing.Color.White
+        Me.Btn_Cuentas.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.Btn_Cuentas.OnHoverTextColor = System.Drawing.Color.DimGray
+        Me.Btn_Cuentas.selected = False
+        Me.Btn_Cuentas.Size = New System.Drawing.Size(290, 50)
+        Me.Btn_Cuentas.TabIndex = 100
+        Me.Btn_Cuentas.Text = "Cuentas"
+        Me.Btn_Cuentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Btn_Cuentas.Textcolor = System.Drawing.Color.DimGray
+        Me.Btn_Cuentas.TextFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'BtnSalir
         '
@@ -147,7 +184,7 @@ Partial Class Main
         Me.BtnSalir.IconVisible = True
         Me.BtnSalir.IconZoom = 70.0R
         Me.BtnSalir.IsTab = False
-        Me.BtnSalir.Location = New System.Drawing.Point(0, 365)
+        Me.BtnSalir.Location = New System.Drawing.Point(0, 420)
         Me.BtnSalir.Name = "BtnSalir"
         Me.BtnSalir.Normalcolor = System.Drawing.Color.White
         Me.BtnSalir.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
@@ -270,7 +307,7 @@ Partial Class Main
         Me.Btn_Prueba_Impresion.IconVisible = True
         Me.Btn_Prueba_Impresion.IconZoom = 70.0R
         Me.Btn_Prueba_Impresion.IsTab = False
-        Me.Btn_Prueba_Impresion.Location = New System.Drawing.Point(0, 420)
+        Me.Btn_Prueba_Impresion.Location = New System.Drawing.Point(0, 475)
         Me.Btn_Prueba_Impresion.Name = "Btn_Prueba_Impresion"
         Me.Btn_Prueba_Impresion.Normalcolor = System.Drawing.Color.White
         Me.Btn_Prueba_Impresion.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
@@ -288,7 +325,7 @@ Partial Class Main
         Me.BunifuSeparator1.BackColor = System.Drawing.Color.Transparent
         Me.BunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BunifuSeparator1.LineThickness = 1
-        Me.BunifuSeparator1.Location = New System.Drawing.Point(15, 280)
+        Me.BunifuSeparator1.Location = New System.Drawing.Point(15, 335)
         Me.BunifuSeparator1.Name = "BunifuSeparator1"
         Me.BunifuSeparator1.Size = New System.Drawing.Size(275, 35)
         Me.BunifuSeparator1.TabIndex = 0
@@ -317,7 +354,7 @@ Partial Class Main
         Me.Btn_Configuraciones.IconVisible = True
         Me.Btn_Configuraciones.IconZoom = 70.0R
         Me.Btn_Configuraciones.IsTab = False
-        Me.Btn_Configuraciones.Location = New System.Drawing.Point(0, 310)
+        Me.Btn_Configuraciones.Location = New System.Drawing.Point(0, 365)
         Me.Btn_Configuraciones.Name = "Btn_Configuraciones"
         Me.Btn_Configuraciones.Normalcolor = System.Drawing.Color.White
         Me.Btn_Configuraciones.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
@@ -352,7 +389,7 @@ Partial Class Main
         Me.Btn_CuentasCorrientes.IconVisible = True
         Me.Btn_CuentasCorrientes.IconZoom = 70.0R
         Me.Btn_CuentasCorrientes.IsTab = False
-        Me.Btn_CuentasCorrientes.Location = New System.Drawing.Point(0, 235)
+        Me.Btn_CuentasCorrientes.Location = New System.Drawing.Point(0, 290)
         Me.Btn_CuentasCorrientes.Name = "Btn_CuentasCorrientes"
         Me.Btn_CuentasCorrientes.Normalcolor = System.Drawing.Color.White
         Me.Btn_CuentasCorrientes.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
@@ -387,7 +424,7 @@ Partial Class Main
         Me.Btn_Bancos.IconVisible = True
         Me.Btn_Bancos.IconZoom = 70.0R
         Me.Btn_Bancos.IsTab = False
-        Me.Btn_Bancos.Location = New System.Drawing.Point(0, 180)
+        Me.Btn_Bancos.Location = New System.Drawing.Point(0, 235)
         Me.Btn_Bancos.Name = "Btn_Bancos"
         Me.Btn_Bancos.Normalcolor = System.Drawing.Color.White
         Me.Btn_Bancos.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
@@ -459,7 +496,7 @@ Partial Class Main
         Me.Panel_Main.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Panel_Main.Location = New System.Drawing.Point(0, 65)
         Me.Panel_Main.Name = "Panel_Main"
-        Me.Panel_Main.Size = New System.Drawing.Size(890, 440)
+        Me.Panel_Main.Size = New System.Drawing.Size(890, 485)
         Me.Panel_Main.TabIndex = 96
         '
         'Main
@@ -467,7 +504,7 @@ Partial Class Main
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ClientSize = New System.Drawing.Size(890, 505)
+        Me.ClientSize = New System.Drawing.Size(890, 550)
         Me.Controls.Add(Me.Panel_menu)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel3)
@@ -506,4 +543,5 @@ Partial Class Main
     Friend WithEvents BtnSalir As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel_Main As Panel
+    Friend WithEvents Btn_Cuentas As Bunifu.Framework.UI.BunifuFlatButton
 End Class

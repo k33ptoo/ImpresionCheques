@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Lista_Bancos_UC
+Partial Class Cuentas_Lista_UC
     Inherits System.Windows.Forms.UserControl
 
     'UserControl reemplaza a Dispose para limpiar la lista de componentes.
@@ -24,8 +24,8 @@ Partial Class Lista_Bancos_UC
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Lista_Bancos_UC))
-        Dim Banco1 As ImpresionCheques.banco = New ImpresionCheques.banco()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cuentas_Lista_UC))
+        Dim Cuenta1 As ImpresionCheques.cuenta = New ImpresionCheques.cuenta()
         Me.Dgv_Entidades = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.BunifuFlatButton7 = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -36,8 +36,8 @@ Partial Class Lista_Bancos_UC
         Me.BtnEditar = New Bunifu.Framework.UI.BunifuTileButton()
         Me.BtnEliminar = New Bunifu.Framework.UI.BunifuTileButton()
         Me.BtnActualizar = New Bunifu.Framework.UI.BunifuTileButton()
-        Me._Banco_detalle = New ImpresionCheques.Banco_detalle()
         Me.Buscar_UC11 = New ImpresionCheques.Buscar_UC1()
+        Me._Cuenta_Detalle = New ImpresionCheques.Cuenta_detalle()
         CType(Me.Dgv_Entidades, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -146,9 +146,9 @@ Partial Class Lista_Bancos_UC
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(35, 25)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(93, 28)
+        Me.Label2.Size = New System.Drawing.Size(101, 28)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "BANCOS"
+        Me.Label2.Text = "CUENTAS"
         '
         'TableLayoutPanel1
         '
@@ -258,18 +258,6 @@ Partial Class Lista_Bancos_UC
         Me.BtnActualizar.Size = New System.Drawing.Size(55, 50)
         Me.BtnActualizar.TabIndex = 123
         '
-        '_Banco_detalle
-        '
-        Banco1.id_banco = 0
-        Banco1.nombre = Nothing
-        Me._Banco_detalle.Actual = Banco1
-        Me._Banco_detalle.BackColor = System.Drawing.Color.WhiteSmoke
-        Me._Banco_detalle.Location = New System.Drawing.Point(240, 150)
-        Me._Banco_detalle.Name = "_Banco_detalle"
-        Me._Banco_detalle.Size = New System.Drawing.Size(420, 220)
-        Me._Banco_detalle.TabIndex = 127
-        Me._Banco_detalle.Visible = False
-        '
         'Buscar_UC11
         '
         Me.Buscar_UC11.BackColor = System.Drawing.Color.WhiteSmoke
@@ -278,16 +266,30 @@ Partial Class Lista_Bancos_UC
         Me.Buscar_UC11.Size = New System.Drawing.Size(309, 49)
         Me.Buscar_UC11.TabIndex = 127
         '
-        'Lista_Bancos_UC
+        '_Cuenta_Detalle
+        '
+        Cuenta1.id_banco = 0
+        Cuenta1.id_cuenta = 0
+        Cuenta1.numero = Nothing
+        Cuenta1.observaciones = Nothing
+        Me._Cuenta_Detalle.Actual = Cuenta1
+        Me._Cuenta_Detalle.BackColor = System.Drawing.Color.WhiteSmoke
+        Me._Cuenta_Detalle.Location = New System.Drawing.Point(80, 150)
+        Me._Cuenta_Detalle.Name = "_Cuenta_Detalle"
+        Me._Cuenta_Detalle.Size = New System.Drawing.Size(710, 286)
+        Me._Cuenta_Detalle.TabIndex = 128
+        Me._Cuenta_Detalle.Visible = False
+        '
+        'Lista_Cuentas_UC
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Controls.Add(Me._Banco_detalle)
+        Me.Controls.Add(Me._Cuenta_Detalle)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Dgv_Entidades)
-        Me.Name = "Lista_Bancos_UC"
+        Me.Name = "Lista_Cuentas_UC"
         Me.Size = New System.Drawing.Size(870, 540)
         CType(Me.Dgv_Entidades, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
@@ -308,6 +310,6 @@ Partial Class Lista_Bancos_UC
     Friend WithEvents Label2 As Label
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents _Banco_detalle As Banco_detalle
     Friend WithEvents Buscar_UC11 As Buscar_UC1
+    Friend WithEvents _Cuenta_Detalle As Cuenta_detalle
 End Class

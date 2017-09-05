@@ -113,6 +113,9 @@ todolisto:
     Sub Cargar_listas_parametricas()
         Try
             _lista_bancos = _bancoAcceso.recuperar
+            _lista_cheques = _chequeAcceso.recuperar
+            _lista_cuentas = _cuentaAcceso.recuperar
+            _lista_proveedores = _proveedorAcceso.recuperar
         Catch ex As Exception
             Throw
         End Try
